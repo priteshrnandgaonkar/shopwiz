@@ -14,6 +14,8 @@
 		CA92B9A11B84BCB7005A4C34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA92B9A01B84BCB7005A4C34 /* Images.xcassets */; };
 		CA92B9A41B84BCB7005A4C34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA92B9A21B84BCB7005A4C34 /* LaunchScreen.xib */; };
 		CA92B9B01B84BCB7005A4C34 /* shopwizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA92B9AF1B84BCB7005A4C34 /* shopwizTests.m */; };
+		CACFD7691BAD9A4300CCFC7D /* SWSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CACFD7681BAD9A4300CCFC7D /* SWSearchManager.m */; };
+		CACFD76E1BAD9B3500CCFC7D /* SWSearchPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = CACFD76D1BAD9B3500CCFC7D /* SWSearchPlace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		CA92B9A91B84BCB7005A4C34 /* shopwizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shopwizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA92B9AE1B84BCB7005A4C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA92B9AF1B84BCB7005A4C34 /* shopwizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shopwizTests.m; sourceTree = "<group>"; };
+		CACFD7671BAD9A4300CCFC7D /* SWSearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSearchManager.h; sourceTree = "<group>"; };
+		CACFD7681BAD9A4300CCFC7D /* SWSearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSearchManager.m; sourceTree = "<group>"; };
+		CACFD76C1BAD9B3500CCFC7D /* SWSearchPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSearchPlace.h; sourceTree = "<group>"; };
+		CACFD76D1BAD9B3500CCFC7D /* SWSearchPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSearchPlace.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 		CA92B9921B84BCB7005A4C34 /* shopwiz */ = {
 			isa = PBXGroup;
 			children = (
+				CACFD7A61BAD9D8C00CCFC7D /* Libraries */,
+				CACFD76B1BAD9B0900CCFC7D /* Models */,
+				CACFD76A1BAD9B0200CCFC7D /* Managers */,
 				CACFD7661BAD973000CCFC7D /* Controllers */,
 				CACFD71F1BAB056900CCFC7D /* Storyboards */,
 				CA92B9971B84BCB7005A4C34 /* AppDelegate.h */,
@@ -141,6 +150,31 @@
 			children = (
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CACFD76A1BAD9B0200CCFC7D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CACFD7671BAD9A4300CCFC7D /* SWSearchManager.h */,
+				CACFD7681BAD9A4300CCFC7D /* SWSearchManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		CACFD76B1BAD9B0900CCFC7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CACFD76C1BAD9B3500CCFC7D /* SWSearchPlace.h */,
+				CACFD76D1BAD9B3500CCFC7D /* SWSearchPlace.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CACFD7A61BAD9D8C00CCFC7D /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,8 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA92B99C1B84BCB7005A4C34 /* ViewController.m in Sources */,
+				CACFD76E1BAD9B3500CCFC7D /* SWSearchPlace.m in Sources */,
 				CA92B9991B84BCB7005A4C34 /* AppDelegate.m in Sources */,
 				CA92B9961B84BCB7005A4C34 /* main.m in Sources */,
+				CACFD7691BAD9A4300CCFC7D /* SWSearchManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
