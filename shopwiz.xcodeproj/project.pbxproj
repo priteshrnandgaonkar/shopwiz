@@ -81,14 +81,16 @@
 		CA92B9921B84BCB7005A4C34 /* shopwiz */ = {
 			isa = PBXGroup;
 			children = (
+				CACFD7661BAD973000CCFC7D /* Controllers */,
+				CACFD71F1BAB056900CCFC7D /* Storyboards */,
 				CA92B9971B84BCB7005A4C34 /* AppDelegate.h */,
 				CA92B9981B84BCB7005A4C34 /* AppDelegate.m */,
 				CA92B99A1B84BCB7005A4C34 /* ViewController.h */,
 				CA92B99B1B84BCB7005A4C34 /* ViewController.m */,
-				CA92B99D1B84BCB7005A4C34 /* Main.storyboard */,
 				CA92B9A01B84BCB7005A4C34 /* Images.xcassets */,
 				CA92B9A21B84BCB7005A4C34 /* LaunchScreen.xib */,
 				CA92B9931B84BCB7005A4C34 /* Supporting Files */,
+				CACFD7571BAB187100CCFC7D /* Resources */,
 			);
 			path = shopwiz;
 			sourceTree = "<group>";
@@ -117,6 +119,28 @@
 				CA92B9AE1B84BCB7005A4C34 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CACFD71F1BAB056900CCFC7D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CA92B99D1B84BCB7005A4C34 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CACFD7571BAB187100CCFC7D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CACFD7661BAD973000CCFC7D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +440,7 @@
 				CA92B9B51B84BCB7005A4C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA92B9B61B84BCB7005A4C34 /* Build configuration list for PBXNativeTarget "shopwizTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +449,7 @@
 				CA92B9B81B84BCB7005A4C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

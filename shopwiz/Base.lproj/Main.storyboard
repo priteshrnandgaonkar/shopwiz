@@ -1,25 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jBE-GA-TiO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Shop Controller-->
+        <scene sceneID="rUS-b4-hQf">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="P3d-jp-870" userLabel="Shop Controller" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="HAh-7X-0Zg"/>
+                        <viewControllerLayoutGuide type="bottom" id="58C-fD-wDv"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="2VX-jG-Rvg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g13-jR-lZB">
+                                <rect key="frame" x="16" y="36" width="568" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your shopping place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK1-Pb-kKm">
+                                        <rect key="frame" x="16" y="11.5" width="190.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ZK1-Pb-kKm" firstAttribute="leading" secondItem="g13-jR-lZB" secondAttribute="leading" constant="16" id="Ui0-Cc-XdE"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZK1-Pb-kKm" secondAttribute="trailing" constant="16" id="aAa-pX-MCO"/>
+                                    <constraint firstAttribute="height" constant="48" id="gfS-kP-bjF"/>
+                                    <constraint firstAttribute="centerY" secondItem="ZK1-Pb-kKm" secondAttribute="centerY" id="lcf-fm-fYf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="g13-jR-lZB" secondAttribute="trailing" constant="16" id="0R7-ZZ-5aZ"/>
+                            <constraint firstItem="g13-jR-lZB" firstAttribute="leading" secondItem="2VX-jG-Rvg" secondAttribute="leading" constant="16" id="Lm8-re-Sht"/>
+                            <constraint firstItem="g13-jR-lZB" firstAttribute="top" secondItem="HAh-7X-0Zg" secondAttribute="bottom" constant="16" id="R0e-o6-evR"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Shop" id="2Yo-SI-Swx"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSx-KW-M4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="894" y="366"/>
+        </scene>
+        <!--Product Controller-->
+        <scene sceneID="1PB-bB-Z9s">
+            <objects>
+                <viewController id="Cdm-W6-fnZ" userLabel="Product Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WoB-bG-dhA"/>
+                        <viewControllerLayoutGuide type="bottom" id="7E0-dn-OiM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="58X-JP-Ymf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k56-y4-Idh" userLabel="Search Field">
+                                <rect key="frame" x="16" y="36" width="568" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your shopping place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uld-6z-pex">
+                                        <rect key="frame" x="16" y="11.5" width="190.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Uld-6z-pex" secondAttribute="trailing" constant="16" id="N7R-XL-o4K"/>
+                                    <constraint firstAttribute="centerY" secondItem="Uld-6z-pex" secondAttribute="centerY" id="SC2-KM-qdS"/>
+                                    <constraint firstAttribute="height" constant="48" id="m8T-ZV-20t"/>
+                                    <constraint firstItem="Uld-6z-pex" firstAttribute="leading" secondItem="k56-y4-Idh" secondAttribute="leading" constant="16" id="s06-Rn-NVm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="k56-y4-Idh" secondAttribute="trailing" constant="16" id="5IX-Wf-2lf"/>
+                            <constraint firstItem="k56-y4-Idh" firstAttribute="top" secondItem="WoB-bG-dhA" secondAttribute="bottom" constant="16" id="gTa-vG-fjk"/>
+                            <constraint firstItem="k56-y4-Idh" firstAttribute="leading" secondItem="58X-JP-Ymf" secondAttribute="leading" constant="16" id="t9u-jE-l5E"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Product" id="fiB-af-cfh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y2g-xK-ti4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="-310.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lkG-8A-Wsm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udF-5R-b67" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="jBE-GA-TiO" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="N2c-5x-FiH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Cdm-W6-fnZ" kind="relationship" relationship="viewControllers" id="ZSn-fT-7LE"/>
+                        <segue destination="P3d-jp-870" kind="relationship" relationship="viewControllers" id="c8q-Uq-UYR"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-36" y="42.75"/>
         </scene>
     </scenes>
 </document>
